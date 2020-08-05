@@ -1,0 +1,13 @@
+/*Specifics for each weapon*/
+
+#kalash .mag .next, #kalash .mag .prev{
+  margin-left: 30px;
+}
+
+#kalash .grip .next, #kalash .grip .prev{
+  margin-left: -30px;
+}
+
+#kalash .stock .next, #kalash .stock .prev{
+  margin-left: -20px;
+}

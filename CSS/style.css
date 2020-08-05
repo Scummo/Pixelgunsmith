@@ -1,0 +1,207 @@
+body{
+  font-family: 'Mulish', sans-serif;
+  background-color: #536466;
+  color: white;
+  font-size: 22px;
+  margin: 0px;
+  padding: 0px;
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+  text-shadow: 0px 0px 8px black, 0px 0px 8px black, 1px 0px 1px rgba(255, 0, 0, 0.5), -1px 0px 1px rgba(0, 0, 255, 0.5);
+}
+
+a{
+  text-decoration: none;
+}
+
+.data{
+  font-size: 15px;
+  padding: 10px 20px;
+}
+
+.gunframe{
+  margin: 70px auto;
+  display: flex;
+  flex-wrap: wrap;
+  height: max-content;
+  width: max-content;
+  transition: All 0.2s;
+  filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.3));
+}
+
+.guninfo{
+  display: table;
+  height: min-content;
+  min-width: 200px;
+  text-align: center;
+  padding: 10px 15px;
+  margin: 20px auto;
+  position: relative;
+  transition: all 0.2s ease;
+  font-family: 'Press Start 2P', cursive;
+  letter-spacing: 1px;
+  transition: 0.2s all ease;
+}
+
+.guninfo .guntitle{
+  padding-top: 3px;
+  transition: 0.2s all ease;
+}
+
+.guninfo .prevweapon{
+  background-image: url("../Assets/Arrow.png");
+  image-rendering: pixelated;     /*Chrome?*/
+  image-rendering: crisp-edges;   /* Firefox */
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: rotate(270deg);
+  left: -50px;
+  transition: all 0.1s ease;
+}
+
+.guninfo .prevweapon:hover{
+  cursor: pointer;
+  transform: rotate(270deg) scale(110%);
+}
+
+.guninfo .prevweapon:active{
+  cursor: pointer;
+  transition: all 0.01s;
+  transform: rotate(270deg) scale(80%);
+  filter: brightness(50%);
+}
+
+.guninfo .nextweapon{
+  background-image: url("../Assets/Arrow.png");
+  image-rendering: pixelated;     /*Chrome?*/
+  image-rendering: crisp-edges;   /* Firefox */
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  transform: rotate(90deg);
+  right: -50px;
+  transition: all 0.1s ease;
+}
+
+.guninfo .nextweapon:hover{
+  cursor: pointer;
+  transform: rotate(90deg) scale(110%);
+}
+
+.guninfo .nextweapon:active{
+  cursor: pointer;
+  transition: all 0.01s;
+  transform: rotate(90deg) scale(80%);
+  filter: brightness(50%);
+}
+
+.gunframe .next{
+  background-image: url("../Assets/Arrow.png");
+  image-rendering: pixelated;     /*Chrome?*/
+  image-rendering: crisp-edges;   /* Firefox */
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: -40px;
+  left: calc(50% - 15px);
+  transform: rotate(180deg);
+  transition: all 0.1s ease;
+}
+
+.gunframe .next:hover{
+  cursor: pointer;
+  transform: rotate(180deg) scale(110%);
+}
+
+.gunframe .next:active{
+  cursor: pointer;
+  transition: all 0.01s;
+  transform: rotate(180deg) scale(80%);
+  filter: brightness(50%);
+}
+
+.gunframe .prev{
+  background-image: url("../Assets/Arrow.png");
+  image-rendering: pixelated;     /*Chrome?*/
+  image-rendering: crisp-edges;   /* Firefox */
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: calc(50% - 15px);
+  top: -10px;
+  transition: all 0.1s ease;
+  margin-bottom: -30px;
+  z-index: 99;
+}
+
+.gunframe .prev:hover{
+  cursor: pointer;
+  transform: scale(110%);
+}
+
+.gunframe .prev:active{
+  cursor: pointer;
+  transition: all 0.01s;
+  transform: scale(90%);
+  filter: brightness(50%);
+}
+
+.gunframe img{
+  height: 100%;
+  width: auto;
+  image-rendering: pixelated;     /*Chrome?*/
+  image-rendering: crisp-edges;   /* Firefox */
+}
+
+.gunframe .stock{
+  height: 200px;
+  width: min-content;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+
+.gunframe .body{
+  height: 200px;
+  width: min-content;
+  display: inline-block;
+  position: relative;
+}
+
+.gunframe .grip{
+  height: 200px;
+  width: min-content;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.gunframe .mag{
+  height: 200px;
+  width: min-content;
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.gunframe .frontgrip{
+  height: 200px;
+  display: inline-block;
+  position: relative;
+}
+
+.gunframe .barrel{
+  height: 200px;
+  float: right;
+  display: inline-block;
+  position: relative;
+}
